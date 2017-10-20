@@ -1,5 +1,7 @@
 var deferredPrompt;
 
+if(!window.Promise) window.Promise = Promise;
+
 // Check to see if service workers are supported.
 if('serviceWorker' in navigator) {
 
